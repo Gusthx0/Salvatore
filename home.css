@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.barrinha{
+    background-color: rgba(0, 10, 95, 0.384);
+    margin: 0 auto;
+    width: 100%;
+    height: 10px;
+}
+
+.menuBar{
+    background-color: rgb(172, 217, 255);
+    width: 400px;
+    height: 500px;
+    margin: auto;
+}
+
+.textLink{
+    text-decoration: none;
+    height: auto;
+    width: 400px;
+    margin: 0 auto;
+    padding: 7px;
+}
+
+.ofertas{
+    padding-top: 40px;
+}
+
+
+li{
+    margin: auto;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menuFixo{
+  background-image: linear-gradient(to right, rgb(29, 29, 29),rgb(53, 53, 53) );;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.24);
+}
+
+#check{
+    display: none;
+}
+
+.menuLeftOp{
+    background-color: rgb(233, 233, 233);
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    left: -540px;
+    top: 70px;
+    margin-left: 20px;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    transition: all 0.1s linear;
+    /*box-shadow: 0px 0px 10px 2px; */
+}
+
+#check:checked ~ .menuLeftOp{
+    left: 0;
+    top: 70px; 
+    margin-left: 0;
+    border-radius: 0px;
+}
+
+.logon{
+    width: 70px;
+    margin: 0px auto;
+    
+    text-align: center;
+}
+
+#buscaIcon{
+    margin: auto;
+    margin: 4px;
+    margin-right: 0px;
+    width: 38px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.spacee{
+    width: 500px;
+    margin: auto;
+}
+
+.buscaLogo{
+    flex: 2;
+    margin: auto;
+    text-align: end;
+    z-index: 2000 important;
+    padding-left: 350px;
+    filter: invert(100%);
+}
+
+
+.menuImg{
+    background-color: rgba(0, 0, 0, 0);
+    width: 40px;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 3px;
+    filter: invert(100%);
+}
+
+.menuImg:hover{
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+.imgLogo{
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+    margin-left: 750px;
+    width: auto;
+    height: auto;
+}
+
+.acert{
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 1700px;
+    display: flex;
+    align-content: space-between;
+}
+
+.menuBtn1{
+    background-color: rgba(58, 111, 156, 0);
+    border: none;
+}
+
+.black{
+    background-color: black;
+    width: 100%;
+    overflow: hidden;
+}
+
+.textLink{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: auto;
+}
+
+
+
+/* */
+
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300,500,700');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* Definição de variáveis */
+:root{
+  --cor-texto: #ffffff;
+  --cor-texto-branco: #FEFEFE;
+  --fundo-header: #022557;
+  --altura-menu: 6rem;
+}
+
+/* Tipografia */
+a{
+  text-decoration: none;
+}
+
+
+span,
+strong,
+em{
+  color: var(--cor-texto);
+  font-family: 'Sunflower', sans-serif;
+}
+
+/* Cabeçalho */
+
+header{
+  background: var(--fundo-header);
+  height: var(--altura-menu);
+  padding: 0 2rem;
+  position: relative;
+  transition: all ease-in-out 0.2s;
+}
+
+nav{
+  background-image: linear-gradient(to right, rgb(43, 43, 43),rgb(53, 53, 53) );;
+  height: 84.3%;
+  left: 0;  
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 2000 !important;
+  transition: all ease-in-out .3s;
+}
+
+nav ul{
+  list-style: none;
+  padding: 2rem;
+}
+
+nav li{
+  padding: 1rem 0;
+}
+
+nav li :hover{
+    background-color: rgb(73, 73, 73);
+    width: 100px;
+    border-radius: 10px;
+}
+
+nav a{
+  color: var(--cor-texto-branco);
+  display: block;
+  text-decoration: none;
+  padding: 0;
+}
+
+nav a :hover{
+    padding-left: 10px;
+}
+
+nav.hidden{
+  overflow: hidden;
+  width: 0;
+}
+
+nav.active{
+  width: 20vw;
+}
+
+header h1{
+  line-height: var(--altura-menu);
+  text-align: center;
+}
+
+#btn{
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilo menu-icon*/ 
+#menu-icon{
+  height: 25px;
+  line-height: 6rem;
+  width: 40px;
+}
+
+#menu-icon [id^="linha"]{
+  background: var(--cor-texto);
+  border-radius: 5px;
+  height: 5px;
+  margin-bottom: 5px;
+  width: 100%;  
+}
+
+#menu-icon [id^="linha"]:last-of-type{
+  margin-bottom: 0;
+}
+
+/* Botão para fechar Menu */
+#close{
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  margin: 4px;
+}
+
+/* Transições */
+nav,
+#menu-bar,
+header{
+    transition: all ease-in-out 0.3s;
+} 
+
+#menu-bar{
+    text-align: center;
+    padding-top: 15px;
+}
+
+/*Footer*/
+
+
+
+/*----*/
+
+body::-webkit-scrollbar {
+  width: 10px;               /*width scroll vertical */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(94, 94, 94);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid rgba(0, 0, 0, 0);  /* creates padding around scroll thumb */
+}
+
+
+
+footer{
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  color: #ffffff;
+  background-image: linear-gradient(#022557, #001430);
+  padding-top: 30px;
+}
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.gridFoot{
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px 200px;
+  grid-template-rows: 200px;
+
+  text-align: center;
+  text-decoration: none;
+
+  margin: auto;
+
+}
+
+h2 {
+  font-size: 28px;
+  font-family: vm-head, Arial, Helvetica, sans-serif;
+  color: rgb(255 255 255);
+  padding-left: 5px;
+}
+
+#footUl{
+  text-align: center;
+  align-items: center;
+
+  margin: auto;
+
+  text-align: left;
+}
+
+.imgLogoFoot1{
+  margin: auto;
+  margin-left: 30px;
+  text-align: center;
+  width: 35px;
+}
+.imgLogoFoot2{
+  margin: auto;
+  background-color: white;
+  margin-left: 50px;
+
+  border-radius: 10px;
+  text-align: center;
+  width: 35px;
+}
+.imgLogoFoot3{
+  margin: auto;
+  margin-left: 30px;
+  text-align: center;
+  width: 35px;
+}
+.imgLogoFoot4{
+  margin: auto;
+  padding-left: 50px;
+  text-align: center;
+  width: 35px;
+}
+
+
+.linhaFoot{
+  width: 1400px;
+  height: 2px;
+
+  margin: auto;
+  margin-top: 90px;
+  margin-bottom: 15px;
+
+  background-color: #ffffff;
+}
+
+
+
+.Jun{
+  text-align: justify;
+
+  margin: auto;
+  
+  padding: 10px;
+
+  width: 90%;
+  height: 200px;
+  background-color: rgba(136, 136, 136, 0);
+}
+
+.buscar{
+  position: fixed;
+  top: 0px;
+  right: -400px;
+
+  margin: auto;
+
+  width: 300px;
+  height: 85.5px;
+  padding: 5px;
+  background-image: linear-gradient(to right, rgb(53, 53, 53) , rgb(29, 29, 29));
+
+  box-shadow: -3px 1px 5px 0px rgba(255, 255, 255, 0.61);
+  text-align: center;
+
+  transition: all 0.2s linear;
+
+
+}
+
+.buscarPosition{
+  right: 0 !important;
+}
+
+#buscando{
+  position: absolute;
+  top: 45px;
+  left: 20px;
+
+  border: none;
+  background-color: rgb(241, 241, 241);
+
+  width: 280px;
+  height: 30px;
+  
+
+  margin: auto;
+
+  border-radius: 7px;
+
+  transition: 0.1s linear;
+}
+
+#BuscaX{
+  position: absolute;
+  top: 5;
+  left: 10px;
+
+  width: 20px;
+
+  margin: auto;
+  margin: 3px;
+  
+  filter: invert(100%);
+
+  padding: 4px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.1s linear;
+}
+
+#BuscaX:hover{
+  background-color: rgba(105, 105, 105, 0.616);
+}
+
+
+
+  .img-1{
+    width: 50px;
+    height: 50px;
+   
+  }
+
+  .menu .item{
+    font-family:'Ubuntu', sans-serif;
+    font-size: 20px;  
+    color: #ffffff;  
+    display: inline-block;
+    margin: 40px 25px 0 25px;
+    margin: top right bottom left
+    /* MARGIN-TOP para alinhar no centro */
+    /* (50% da div que o contém) - (50% de sua altura) */
+  }
+  .menu .item:active, .menu .item:focus, .menu .item:hover{
+    text-shadow: 0px 0px 3px #00030200;
+  }
+  .menu{
+    background: #00184286;
+    width: 100%;
+    background-size: 100%;
+    height: 100px;
+    text-align:center;
+    box-shadow: 0 0 10px rgb(189, 189, 189);
+  }
+  /* Não tão importante */
+  body{
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family:'Ubuntu', sans-serif;
+    
+  }
+  a, a:visited, a:link, a:hover{
+    text-decoration: none;
+    padding: 360;
+    color: aqua;
+  }
+  .header{
+    background: url("https://www.agoramotor.com.br/wp-content/uploads/2022/09/polo-2023-novo.jpg.png") rgba(179, 187, 212, 0.466);
+    width: 100%;
+    background-size: 100%;
+    height: 500px;
+    text-align:center;
+    box-shadow: 0 0 10px rgb(189, 189, 189);
+  }
+
+  .header .textu{
+    color: #ffffff;
+    font-size: 43px;
+    font-family:'Ubuntu', sans-serif;
+  }
+
+  .centralizar{
+    display: flex;
+    align-items: center;
+}
+
+.imagem{
+    margin: 0 auto;
+    width: 5%;
+    padding: 20px;
+}
+
+.imgNoticia{
+    width: 650px;
+    height: 400px; 
+    margin: 0 auto;
+} 
+
+.titi {
+    font-size: 60px;
+    display: flex;
+    text-align: justify;
+    color: #022557;
+    margin-left: 550px;
+    font-family:'Ubuntu', sans-serif;
+}
+
+.texto{
+    text-align: justify;
+    font-size: 40px;
+    font-family:'Ubuntu', sans-serif;
+    width: 600px;
+    margin: auto;
+}
+
+.div-slider{
+    width: auto;
+    height: 400px;
+    text-align: center;
+    }
+    .slides-front {
+        padding: 0;
+        width: 1000px;
+        height: 570px;
+        display: block;
+        margin: auto;
+        position: relative;
+    }
+    
+    .slides-front * {
+        user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+    }
+    
+    .slides-front input { display: none; }
+    
+    .slide-container { display: block; }
+    
+    .slide {
+        top: 0;
+        opacity: 0;
+        width: 980px;
+        height: 500px;
+        display: block;
+        position: absolute;
+    
+        transform: scale(0);
+    
+        transition: all .7s ease-in-out 0.1s;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    
+    .nav label {
+        width: 150px;
+        height: 100%;
+        display: none;
+        position: absolute;
+        opacity: 0;
+        z-index: 9;
+        cursor: pointer;
+        transition: opacity .2s;
+        color: rgb(255, 255, 255);
+        font-size: 156pt;
+        text-align: center;
+        line-height: 480px;
+        font-family: "Varela Round", sans-serif;
+        background-color: rgba(255, 255, 255, 0);
+        text-shadow: 0px 0px 15px rgb(119, 119, 119);
+    }
+    
+    .slide:hover + .nav label { opacity: 0.5; }
+    
+    .nav label:hover { opacity: 1; }
+    
+    .nav .next { right: 0; }
+    
+    input:checked + .slide-container  .slide {
+        opacity: 1;
+    
+        transform: scale(1);
+    
+        transition: opacity 1s ease-in-out 0.1s;
+    }
+    
+    input:checked + .slide-container .nav label { display: block; }
+    
+    .nav-dots {
+        width: 100%;
+        bottom: 9px;
+        height: 11px;
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    
+    .nav-dots .nav-dot {
+        top: 450px;
+        width: 11px;
+        height: 11px;
+        margin: 0 4px;
+        position: relative;
+        border-radius: 100%;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    
+    .nav-dots .nav-dot:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    input#img-1:checked ~ .nav-dots label#img-dot-1,
+    input#img-2:checked ~ .nav-dots label#img-dot-2,
+    input#img-3:checked ~ .nav-dots label#img-dot-3{
+             background: rgba(0, 0, 0, 0.8);
+    }
+
+ 
+
+.efeito:hover{   /* efeito*/
+    cursor: pointer;
+    transition-duration: 1s;
+    transform: scale(1.3 , 1.3);
+}
+
+.estilo3 img{   /*Icone login*/
+    width: 38px;
+    height: 38px;
+}
+
+
+.textos1{
+    padding: 50px;
+    margin: 53px;
+    margin-left: 59px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.927);
+    background: #ffffff;
+}
+
+.ov{
+  font-size: 35px;
+    width: 100%;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #333;
+}
+
+.ev {
+  width: 50px;
+  height: 50px;
+  left: 50px;
+}
+
+
+.ov2{
+  font-size: 15px;
+  color: rgb(203, 219, 242);
+}
+
+.textos1 .text {
+   display: block;
+   font-size: 25px;
+}
+.textos1 .item{
+    margin: 30px;
+    width: 950px;
+    height: 500px;
+   
+}
+
+.img{
+    width: 390px;
+    height: 600px;
+    
+    margin: 13px 13px 13px;
+    align-items: center;
+  }
+  
+  .main {
+    display: block;
+    align-items: center;
+    margin-left: 53px;
+  }
+
+.textos1 .h1{
+    font-size: 40px;
+}
+
+
+.textos1 .itemm{
+    
+    font-size: 60px;
+    text-align: center;
+    color: rgb(3, 97, 185);
+}
+
